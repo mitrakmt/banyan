@@ -1,7 +1,7 @@
 import React from "react";
-import SignupForm from "../../../components/signupForm/signupForm"
+import SignupForm from "components/signupForm/signupForm"
 
-import "./videoPlayer.css";
+import "./videoPlayer.scss";
 
 const videoPlayer = ({ url, poster }) => (
   <div className="video-player">
