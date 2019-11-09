@@ -1,11 +1,15 @@
 import React from "react";
 import SignupForm from "components/signupForm/signupForm"
+import LandingInfo from "components/landingInfo/landingInfo"
 
 import "./videoPlayer.scss";
 
 const videoPlayer = ({ url, poster }) => (
   <div className="video-player">
-    <SignupForm />
+    <div className="landing-information">
+      <LandingInfo />
+      <SignupForm />
+    </div>
     <video
       className="vid-insert bg-black"
       id="ocean"

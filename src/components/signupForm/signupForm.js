@@ -3,11 +3,17 @@ import React, { useState } from "react";
 import "./signupForm.scss";
 
 function SignupForm() {
-  const [email, setEmail] = useState('');
+  const [state, setState] = useState({
+    email: '',
+    firstName: '',
+    lastName: '',
+    phone: ''
+  });
   const [seriousInterestBro, setSeriousInterestBro] = useState(false)
 
-  const updateEmail = (event) => {
-    setEmail(event.target.value)
+  const updateState = (event) => {
+    let newState = {...state, ...{ [event.target.id]: event.target.value }}
+    setState(newState)
   }
 
   const setInterestLevel = () => {
@@ -20,15 +26,18 @@ function SignupForm() {
 
   return (
     <div className="signupForm">
-      <h2>Interested in learning more?</h2>
-      <h5>Sign up with your email and we'll reach out when we have more information to share!</h5>
-      <label className="container">
+      <h2 className="signupForm-header">Reinvent your career</h2>
+      <p className="signupForm-description">Banyan code school is led by experienced egineering leaders and hiring managers. We produce Software Engineers the best teams want to hire.</p>
+      {/* <label className="container">
         Interested in signup up for our first cohort? Check here!
       <input type="checkbox" checked={seriousInterestBro} onChange={setInterestLevel} />
       <span className="checkmark" />
-    </label>
-      <input className="email-input" value={email} onChange={updateEmail} />
-      <button className="submit-button" onClick={submitForm}>Submit</button>
+      </label> */}
+      <input className="signupForm-formInput" value={state.firstName} onChange={updateState} placeholder="First Name" id="firstName" />
+      <input className="signupForm-formInput" value={state.lastName} onChange={updateState} placeholder="Last Name" id="lastName" />
+      <input className="signupForm-formInput" value={state.email} onChange={updateState} placeholder="Email" id="email" />
+      <input className="signupForm-formInput" value={state.phone} onChange={updateState} placeholder="Phone Number" id="phone" />
+      <button className="signupForm-submit" onClick={submitForm}>Request Info</button>
     </div>
   );
 }
