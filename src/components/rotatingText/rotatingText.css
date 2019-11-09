@@ -1,0 +1,20 @@
+.banyan-rotatingText-container {
+  position: absolute;
+}
+
+.banyan-rotatingText {
+  -webkit-animation: fadeinout 4s linear 1 forwards;
+  animation: fadeinout 4s linear 1 forwards;
+}
+
+@-webkit-keyframes fadeinout {
+0% { opacity: 0; }
+50% { opacity: 1; }
+100% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+0% { opacity: 0; }
+50% { opacity: 1; }
+100% { opacity: 0; }
+}
