@@ -1,0 +1,13 @@
+.navigationItem {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgray;
+  transition-duration: 0.2s;
+  margin: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lightgray;
+  }
+}
