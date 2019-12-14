@@ -9,25 +9,52 @@ function App() {
     {
       title: "Eat",
       sellingPoints: [
-        `We believe the best code is written when your mind and body are "full".`,
-        `We believe the best code is written when your m"full".`,
-        `We believe the best code is writand body are "full".`
+        {
+          subtitle: "some subtitle",
+          text: `We believe the best code is written when your mind and body are "full".`
+        },
+        {
+          subtitle: "next subtitle",
+          text: `We believe the best code is written when your m"full".`
+        },
+        {
+          subtitle: "last subtitle",
+          text: `We believe  when your mind and body are "full".`
+        }
       ]
     },
     {
       title: "Code",
       sellingPoints: [
-        `We believe the best code is written when your mind and body are "full".`,
-        `We believe the best code is written when your m"full".`,
-        `We believe the best code is writand body are "full".`
+        {
+          subtitle: "first subtitle",
+          text: `We believe the best code is written when your mind and body are "full".`
+        },
+        {
+          subtitle: "next subtitle",
+          text: `We believe the best code is written when your m"full".`
+        },
+        {
+          subtitle: "last subtitle",
+          text: `We believe  when your mind and body are "full".`
+        }
       ]
     },
     {
       title: "Love",
       sellingPoints: [
-        `We believe the best code is written when your mind and body are "full".`,
-        `We believe the best code is written when your m"full".`,
-        `We believe the best code is writand body are "full".`
+        {
+          subtitle: "current subtitle",
+          text: `We believe the best code is written when your mind and body are "full".` 
+        },
+        {
+          subtitle: "next subtitle",
+          text: `We believe the best code is written when your m"full".`
+        },
+        {
+          subtitle: "last subtitle",
+          text: `We believe  when your mind and body are "full".`
+        }
       ]
     }
   ]
