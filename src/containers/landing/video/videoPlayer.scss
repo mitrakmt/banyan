@@ -1,0 +1,22 @@
+.vid-insert {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.video-player {
+    position: relative;
+}
+
+.landing-information {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    z-index: 5;
+
+    @media only screen and (max-width: 700px) {
+        flex-direction: column;
+      }
+}

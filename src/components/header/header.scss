@@ -1,0 +1,15 @@
+.header {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid darkgray;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 5;
+  &-logo {
+    margin: 5px;
+    height: 80%;
+  }
+}
+

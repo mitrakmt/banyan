@@ -1,0 +1,132 @@
+.signupForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  max-height: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 50px;
+
+    /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(218, 216, 216);
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  &-header {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  &-description {
+    margin: 0;
+    font-size: 18px;
+    padding: 25px 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  &-formInput {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
+    margin-bottom: 10px;
+    min-width: 250px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-submit {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: rgb(173, 23, 23);
+    transition-duration: 0.3s;
+    color: white;
+    width: 60%;
+
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: rgb(136, 43, 43);
+    }
+  }
+
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+}
+
+
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: rgb(185, 184, 184);
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
