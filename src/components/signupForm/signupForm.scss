@@ -68,7 +68,7 @@
     background-color: rgb(173, 23, 23);
     transition-duration: 0.3s;
     color: white;
-    width: 60%;
+    width: 80%;
 
     &:focus {
       outline: none;
@@ -78,6 +78,18 @@
     }
   }
 
+  &-message {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+  }
+
+  &-error {
+    color: red;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
 }
 
 /* Customize the label (the container) */
