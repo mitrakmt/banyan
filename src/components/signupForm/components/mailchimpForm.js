@@ -34,7 +34,7 @@ function MailchimpForm({ status, message, onValidated, resetForm, email, name, p
     <div>
       <button className="signupForm-submit" onClick={submit}>Request Info</button>
       {
-        !message && <p className="signupForm-message">THanks for doing it!</p>
+        !message && <p className="signupForm-message">{message}</p>
       }
     </div>
   );
