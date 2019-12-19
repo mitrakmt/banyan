@@ -1,43 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import MailchimpForm from './components/mailchimpForm';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 import "./signupForm.scss";
 
 function SignupForm() {
-  const [state, setState] = useState({
-    email: '',
-    firstName: '',
-    lastName: '',
-    phone: ''
-  });
-  const [seriousInterestBro, setSeriousInterestBro] = useState(false)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [emailError, setEmailError] = useState(false)
+  const [nameError, setNameError] = useState(false)
+  const url = "https://gmail.us11.list-manage.com/subscribe/post?u=33c7e4c6b7d5ec19fb04c791f&amp;id=0408f6cdfb";
 
-  const updateState = (event) => {
-    let newState = {...state, ...{ [event.target.id]: event.target.value }}
-    setState(newState)
-  }
-
-  const setInterestLevel = () => {
-    setSeriousInterestBro(!seriousInterestBro)
-  }
-
-  const submitForm = () => {
-    // TODO: submit interest with email and seriousInterestBro
+  const resetForm = () => {
+    setName('')
+    setEmail('')
+    setPhone('')
   }
 
   return (
     <div className="signupForm">
       <h2 className="signupForm-header">Reinvent your career</h2>
       <p className="signupForm-description">Banyan code school is led by experienced egineering leaders and hiring managers. We produce Software Engineers the best teams want to hire.</p>
-      {/* <label className="container">
-        Interested in signup up for our first cohort? Check here!
-      <input type="checkbox" checked={seriousInterestBro} onChange={setInterestLevel} />
-      <span className="checkmark" />
-      </label> */}
-      <input className="signupForm-formInput" value={state.firstName} onChange={updateState} placeholder="First Name" id="firstName" />
-      <input className="signupForm-formInput" value={state.lastName} onChange={updateState} placeholder="Last Name" id="lastName" />
-      <input className="signupForm-formInput" value={state.email} onChange={updateState} placeholder="Email" id="email" />
-      <input className="signupForm-formInput" value={state.phone} onChange={updateState} placeholder="Phone Number" id="phone" />
-      <button className="signupForm-submit" onClick={submitForm}>Request Info</button>
+      <input className="signupForm-formInput" value={name} onChange={(event) => setName(event.target.value)} placeholder="Name" />
+      {
+        nameError && <p className="signupForm-error">Name is required</p>
+      }
+      <input className="signupForm-formInput" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="Email" />
+      {
+        emailError && <p className="signupForm-error">A valid email is required</p>
+      }
+      <input className="signupForm-formInput" value={phone} onChange={(event) => setPhone(event.target.value)} placeholder="Phone Number" />
+      <MailchimpSubscribe
+          url={url}
+          render={({ subscribe, status, message }) => (
+            <MailchimpForm
+              status={status}
+              message={message}
+              onValidated={subscribe}
+              resetForm={resetForm}
+              email={email}
+              name={name}
+              phone={phone}
+              setEmailError={setEmailError}
+              setNameError={setNameError}
+            />
+          )}
+        />
     </div>
   );
 }
