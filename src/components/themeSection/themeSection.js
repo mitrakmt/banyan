@@ -9,6 +9,7 @@ const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
   const [selectedNavigation, setSelectedNavigation] = useState(0);
 
   const changeNavigation = (event, index) => {
+    // Hacked in adding index to minimize changes here. This is used by the arrows.
     if (index !== undefined) {
       if (index < 0) {
         setSelectedNavigation(sellingPoints.length - 1)
@@ -17,6 +18,7 @@ const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
       } else {
         setSelectedNavigation(index)
       }
+    // When there's no index provided, use the elements id. This is used by the bottom selectors.
     } else {
       setSelectedNavigation(parseInt(event.target.id))
     }
