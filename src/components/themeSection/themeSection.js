@@ -7,10 +7,6 @@ import "./themeSection.scss";
 
 const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
   const [selectedNavigation, setSelectedNavigation] = useState(0);
-  // useEffect(() => {
-  //   const scroll = window.scrollY;
-
-  // })
 
   const changeNavigation = (event, index) => {
     if (index !== undefined) {
@@ -24,7 +20,6 @@ const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
     } else {
       setSelectedNavigation(parseInt(event.target.id))
     }
-    
   }
 
   return (
@@ -41,12 +36,12 @@ const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
           }
         </div>
       </div>
-      <span className="themeSection-navigation themeSection-navigation-left" onClick={() => { changeNavigation(null, (selectedNavigation - 1))}}>
-          <ArrowBackIosIcon />
-        </span>
-        <span className="themeSection-navigation themeSection-navigation-right" onClick={() => { changeNavigation(null, (selectedNavigation + 1))}}>
-          <ArrowForwardIosIcon />
-        </span>
+      <span className="themeSection-navigation themeSection-navigation-left" onClick={() => { changeNavigation(null, (selectedNavigation - 1)) }}>
+        <ArrowBackIosIcon />
+      </span>
+      <span className="themeSection-navigation themeSection-navigation-right" onClick={() => { changeNavigation(null, (selectedNavigation + 1)) }}>
+        <ArrowForwardIosIcon />
+      </span>
     </div>
   )
 }
