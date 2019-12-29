@@ -10,6 +10,9 @@
   position: relative;
 
   &-navigation {
+    &:hover {
+      cursor: pointer;
+    }
     position: absolute;
     &-left {
       left: 25px;
