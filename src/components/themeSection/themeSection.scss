@@ -1,4 +1,6 @@
 .themeSection {
+  background-image: url('../../images/theme-placeholder.jpeg');
+  background-size: cover;
   width: 80%;
   border: 1px solid #cfe1e8;
   margin: 60px auto;
@@ -10,12 +12,15 @@
   position: relative;
 
   &-navigation {
+    &:hover {
+      cursor: pointer;
+    }
     position: absolute;
     &-left {
-      left: 5px;
+      left: 25px;
     }
     &-right {
-      right: 5px;
+      right: 25px;
     }
   }
 
