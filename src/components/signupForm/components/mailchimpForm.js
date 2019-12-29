@@ -10,7 +10,7 @@ function MailchimpForm({ status, message, onValidated, resetForm, email, name, p
   }, [status, resetForm])
 
   const submit = () => {
-    if (!email.indexOf("@") > -1) {
+    if (email.indexOf("@") < 0) {
       setEmailError(true);
       return;
     }

@@ -2,15 +2,37 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   max-width: 600px;
   margin: 50px;
+  margin-top: 0;
 
   &-header {
     font-size: 40px; 
+
+    // Ipad Pro width
+    @media only screen and (max-width: 1200px) {
+      font-size: 30px;
+    }
+
+    // Mobile width
+    @media only screen and (max-width: 450px) {
+      margin-top: 0;
+    }
   }
 
   &-bodyText {
     font-size: 20px;
+
+    // Ipad Pro width
+    @media only screen and (max-width: 1200px) {
+      font-size: 14px;
+    }
+
+     // Mobile width
+     @media only screen and (max-width: 450px) {
+      margin-top: 0;
+    }
   }
 }

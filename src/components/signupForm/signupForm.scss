@@ -9,7 +9,20 @@
   padding: 30px;
   border-radius: 10px;
   text-align: center;
-  margin: 50px;
+  margin-right: 30px;
+  margin-top: 10px;
+
+  @media only screen and (max-width: 1200px) {
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 700px) {
+    margin-top: 18vw;
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin-top: 8vw;
+  }
 
     /* Create a custom radio button */
   .checkmark {
@@ -32,6 +45,11 @@
     margin: 0;
     font-size: 40px;
     font-weight: 400;
+
+    // Ipad Pro width
+    @media only screen and (max-width: 1200px) {
+      font-size: 30px;
+    }
   }
 
   &-description {
@@ -40,6 +58,11 @@
     padding: 25px 0;
     font-weight: 300;
     letter-spacing: 2px;
+
+    // Ipad Pro width
+    @media only screen and (max-width: 1200px) {
+      font-size: 14px;
+    }
   }
 
   &-formInput {
