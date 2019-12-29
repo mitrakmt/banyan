@@ -12,15 +12,36 @@
   position: relative;
 
   &-navigation {
+    position: absolute;
+
     &:hover {
       cursor: pointer;
     }
-    position: absolute;
+
     &-left {
       left: 25px;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      &:hover {
+        color: #67ddbf;
+      }
+
+      @media only screen and (max-width: 450px) {
+        left: 10px;
+      }
     }
+
     &-right {
       right: 25px;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      &:hover {
+        color: #67ddbf
+      }
+
+      @media only screen and (max-width: 450px) {
+        right: 10px;
+      }
     }
   }
 
@@ -34,6 +55,11 @@
     margin: 0;
     margin-top: 20px;
     top: 0;
+    color: #fff;
+
+    @media only screen and (max-width: 450px) {
+      font-size: 1.0rem;
+    }
   }
 
   &-subtitle {
@@ -46,6 +72,11 @@
     margin: 0;
     margin-top: 20px;
     top: 0;
+    color: #fff;
+
+    @media only screen and (max-width: 450px) {
+      font-size: 1.0rem;
+    }
   }
 
   &-sellingPoints {
@@ -53,12 +84,19 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    color: #fff;
+    font-weight: 500;
 
     &-navigation {
       margin-top: auto;
       position: absolute;
       bottom: 10px;
       display: flex;
+    }
+
+    @media only screen and (max-width: 450px) {
+      max-width: 70%;
+      text-align: center;
     }
   }
   
