@@ -1,6 +1,8 @@
 .themeSection {
   background-image: url('../../images/theme-placeholder.jpeg');
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
   width: 80%;
   border: 1px solid #cfe1e8;
   margin: 60px auto;
@@ -81,11 +83,18 @@
 
   &-sellingPoints {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     color: #fff;
     font-weight: 500;
+    max-width: 80%;
+
+    &-text {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
 
     &-navigation {
       margin-top: auto;

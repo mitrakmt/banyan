@@ -1,0 +1,61 @@
+.salaryCalculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  &-header {
+    font-size: 40px; 
+    margin-bottom: 10px;
+
+    // Ipad Pro width
+    @media only screen and (max-width: 1200px) {
+      font-size: 30px;
+    }
+  }
+
+  &-chart {
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    max-height: 300px;
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-child {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 50px;
+      text-align: left;
+    }
+  }
+
+  &-boldText {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  &-select {
+    box-shadow: none;
+    padding: 10px;
+    min-width: 200px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    padding: 20px;
+    background-color: #FAFCFD;
+    border: 1px solid lightgray;
+    transition: .3s ease-in-out;
+  }
+}

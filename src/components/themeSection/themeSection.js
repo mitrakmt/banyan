@@ -29,15 +29,24 @@ const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
       <h3 className="themeSection-title">{title}</h3>
       <h5 className="themeSection-subtitle">{sellingPoints[selectedNavigation].subtitle}</h5>
       <div className="themeSection-sellingPoints">
-        <p>{sellingPoints[selectedNavigation].text}</p>
-        <div className="themeSection-sellingPoints-navigation">
+        <ul>
+          {
+            sellingPoints[selectedNavigation].text.map((textItem, index) => (
+              <li>
+                <h4 key={`themeSection-textItem-${textItem}-${index}`} className="themeSection-sellingPoints-text">{textItem}</h4>
+              </li>
+            ))
+          }
+        </ul>
+
+      </div>
+      <div className="themeSection-sellingPoints-navigation">
           {
             sellingPoints.map((item, index) => (
               <NavigationItem selected={selectedNavigation === index} index={index} onclick={changeNavigation} key={`themeSection-${item.subtitle}-${index}`} />
             ))
           }
         </div>
-      </div>
       <span className="themeSection-navigation themeSection-navigation-left" onClick={() => { changeNavigation(null, (selectedNavigation - 1)) }}>
         <ArrowBackIosIcon />
       </span>
