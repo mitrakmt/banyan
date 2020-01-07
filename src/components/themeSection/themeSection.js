@@ -29,15 +29,13 @@ const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
       <h3 className="themeSection-title">{title}</h3>
       <h5 className="themeSection-subtitle">{sellingPoints[selectedNavigation].subtitle}</h5>
       <div className="themeSection-sellingPoints">
-        <ul>
+        <div>
           {
             sellingPoints[selectedNavigation].text.map((textItem, index) => (
-              <li>
                 <h4 key={`themeSection-textItem-${textItem}-${index}`} className="themeSection-sellingPoints-text">{textItem}</h4>
-              </li>
             ))
           }
-        </ul>
+        </div>
 
       </div>
       <div className="themeSection-sellingPoints-navigation">

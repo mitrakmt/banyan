@@ -3,6 +3,7 @@ import Header from "components/header/header";
 import VideoPlayer from "containers/landing/video/videoPlayer";
 import ThemeSection from "components/themeSection/themeSection";
 import SalaryCalculator from "components/salaryCalculator/salaryCalculator"
+import Footer from "components/footer/footer"
 import "./app.scss";
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
         ))
       }
       <SalaryCalculator />
+      <Footer />
     </div>
   );
 }

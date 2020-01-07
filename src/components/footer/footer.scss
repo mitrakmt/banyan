@@ -1,0 +1,114 @@
+.footer {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #67ddbf;
+  z-index: 100;
+  padding: 10px;
+
+  &-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &-logoSignupContainer {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    height: 55px;
+    margin-top: auto;
+  }
+
+  &-divider {
+    border-bottom: 1px solid rgb(228, 227, 227);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 90%;
+    height: 0px;
+  }
+
+  &-signupText {
+    text-align: right;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+  }
+
+  &-bottomContainer {
+    color: white;
+    display: flex;
+    &-column {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      margin: 25px;
+
+      &-header {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      &-text {
+        margin-bottom: 10px;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+
+  &-formInput {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
+    min-width: 170px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+    color: rgb(51, 51, 51);
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-submit {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 200px;
+    background-color: transparent;
+    border: 1px solid white;
+    transition-duration: 0.3s;
+    color: white;
+    width: 80%;
+
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: white;
+      color: #67ddbf;
+    }
+  }
+
+  &-message {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+  }
+
+  &-error {
+    color: red;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+

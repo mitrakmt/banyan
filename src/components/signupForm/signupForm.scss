@@ -56,14 +56,14 @@
 
   &-description {
     margin: 0;
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px 0;
     font-weight: 300;
     letter-spacing: 2px;
 
     // Ipad Pro width
     @media only screen and (max-width: 1200px) {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 
