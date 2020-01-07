@@ -5,8 +5,11 @@ import "./landingInfo.scss";
 function LandingInfo() {
   return (
     <div className="landingInfo">
-      <h2 className="landingInfo-header">Reinvent your career</h2>
-      <p className="landingInfo-bodyText">Banyan code school is led by experienced egineering leaders and hiring managers. We produce Software Engineers the best teams want to hire.</p>
+      <div className="landingInfo-list">
+        <h3 className="landingInfo-header">Graduate.</h3>
+        <h3 className="landingInfo-header">Compete with seasoned engineers.</h3>
+        <h3 className="landingInfo-header">Make six figures a year.</h3>
+      </div>
     </div>
   );
 }

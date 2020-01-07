@@ -12,19 +12,19 @@ function App() {
       sellingPoints: [
         {
           subtitle: "Hands on expertise",
-          text: [`We know how to teach because we've done this before at one of the top three coding. We know that there are gaps in what they're teaching and how to do better.`, `Get taught by instructors that have built products for Blizzard, Zenimax, Macy's and more`]
+          text: [`We know how to teach because we've done this before at one of the top three coding bootcamps, and we know that there are gaps in what they're teaching and how to do it better.`, `Get taught by instructors that have built products for Blizzard, Zenimax and Macy's, and have led teams of over 50 engineers.`]
         },
         {
           subtitle: "Why not them",
-          text: [`Other bootcamps use instructors that have no experience`]
+          text: [`Other bootcamps use instructors that have no experience. This is not ok, and it won't ever happen here.`]
         },
         {
           subtitle: "Graduate as a mid-level engineer",
-          text: [`You're going to go through x number of projects, with the guidance of expert instructors, where you'll be....`]
+          text: [`You're going to go through x number of projects, with the guidance of expert instructors, where you'll be taught how good engineers think through and solve problems, and output excellent code.`]
         },
         {
           subtitle: "We know what companies are hiring for",
-          text: [`Our instructors have interviewed and hired over hundreds of engineers of all levels`]
+          text: [`Our instructors have interviewed and hired over hundreds of engineers of all levels, and know what hiring managers are looking for.`]
         },
         {
           subtitle: "We know who you need to know",
@@ -32,7 +32,7 @@ function App() {
         },
         {
           subtitle: "Get overpaid like the rest of us",
-          text: [`Graduating from a junior to mid level engineer increases your salary from $70k to $90k.`]
+          text: [`Graduating form a junior to mid level increases your salary from $70k to $90k.`]
         },
       ]
     },
