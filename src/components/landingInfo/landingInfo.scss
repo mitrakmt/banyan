@@ -4,12 +4,13 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  max-width: 600px;
   margin: 50px;
   margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+
 
   &-header {
-    font-size: 32px; 
+    font-size: 72px; 
     margin-bottom: 20px;
 
     // Ipad Pro width
@@ -24,6 +25,7 @@
   }
 
   &-list {
+    color: purple;
     text-align: left;
   }
 
