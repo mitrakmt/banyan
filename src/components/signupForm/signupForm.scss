@@ -47,6 +47,7 @@
     margin: 0;
     font-size: 40px;
     font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 
     // Ipad Pro width
     @media only screen and (max-width: 1200px) {
@@ -60,6 +61,7 @@
     padding: 20px 0;
     font-weight: 300;
     letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
 
     // Ipad Pro width
     @media only screen and (max-width: 1200px) {
@@ -90,16 +92,17 @@
     border-radius: 5px;
     margin: 20px;
     cursor: pointer;
-    background-color: rgb(173, 23, 23);
+    background-color: purple;
     transition-duration: 0.3s;
     color: white;
     width: 80%;
+    border: 0;
 
     &:focus {
       outline: none;
     }
     &:hover {
-      background-color: rgb(136, 43, 43);
+      background-color: purple;
     }
   }
 
