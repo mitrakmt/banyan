@@ -65,6 +65,7 @@ function App() {
         <div className="footer-bottomContainer-column">
           <h3 className="footer-bottomContainer-column-header">More</h3>
           <p className="footer-bottomContainer-column-text">FAQ</p>
+          <p className="footer-bottomContainer-column-text">Instructors</p>
           <p className="footer-bottomContainer-column-text">Contact Us</p>
         </div>
       </div>
