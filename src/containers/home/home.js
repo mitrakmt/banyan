@@ -9,6 +9,9 @@ import hiringImage from '../../images/hiring.jpg'
 import weKnowImage from '../../images/we-know.jpg'
 import getOverpaidImage from '../../images/get-overpaid.jpg'
 import localCuisineImage from '../../images/local-cuisine.jpg'
+import nightlifeImage from '../../images/nightlife.jpg'
+import bali1Image from '../../images/bali1.jpg'
+import bali2Image from '../../images/bali2.jpg'
 import "./home.scss";
 
 function Home() {
@@ -58,7 +61,8 @@ function Home() {
         },
         {
           subtitle: "Nightlife",
-          text: [`Experience great "views" while meeting people from all corners of the world`, `Bond with your classmates to create lifelong friendships`]
+          text: [`Experience great "views" while meeting people from all corners of the world`, `Bond with your classmates to create lifelong friendships`],
+          backgroundImage: nightlifeImage
         }
       ]
     },
@@ -67,11 +71,13 @@ function Home() {
       sellingPoints: [
         {
           subtitle: "Experience Bali",
-          text: [`Take breaks from the curriculum with guided experiences around the island. This includes sunrise from one of Bali's volcanos, spend a day traveling around cliff side temples, and catch a sunset drinking Pina coladas over one of Bali's famous beaches.` ]
+          text: [`Take breaks from the curriculum with guided experiences around the island. This includes sunrise from one of Bali's volcanos, spend a day traveling around cliff side temples, and catch a sunset drinking Pina coladas over one of Bali's famous beaches.`],
+          backgroundImage: bali1Image
         },
         {
-          subtitle: "Mix business with pleasure ",
-          text: [`You're gonna work hard but we're going to make sure that you get rejuvenated through massages, meditation, and much more.`]
+          subtitle: "Mix business with pleasure",
+          text: [`You're gonna work hard but we're going to make sure that you get rejuvenated through massages, meditation, and much more.`],
+          backgroundImage: bali2Image
         },
         {
           subtitle: "Ingraining the experience with passion and like-minded individuals",
