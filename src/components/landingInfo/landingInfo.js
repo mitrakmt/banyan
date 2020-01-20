@@ -6,7 +6,7 @@ function LandingInfo() {
   return (
     <div className="landingInfo">
       <div className="landingInfo-list">
-        <h3 className="landingInfo-header">Graduate</h3>
+        <h3 className="landingInfo-header">Get away and study in Bali</h3>
         <h3 className="landingInfo-header">Become a seasoned engineer</h3>
         <h3 className="landingInfo-header">Make six figures a year</h3>
       </div>
