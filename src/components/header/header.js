@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "logo.svg";
+import { Link } from 'react-router-dom';
 
 import "./header.scss";
 
@@ -8,7 +9,7 @@ function App() {
     <div className="header">
       <img src={logo} className="header-logo" alt="logo" />
       <div className="header-container" />
-      <h4>Banyan Code Camp</h4>
+      <Link to="/" className="header-link"><h4>Banyan Code Camp</h4></Link>
     </div>
   );
 }

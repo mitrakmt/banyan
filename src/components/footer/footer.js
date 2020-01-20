@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "logo.svg";
+import { Link } from 'react-router-dom';
 
 import MailchimpForm from './components/mailchimpForm';
 import MailchimpSubscribe from "react-mailchimp-subscribe"
@@ -64,7 +65,7 @@ function App() {
         </div>
         <div className="footer-bottomContainer-column">
           <h3 className="footer-bottomContainer-column-header">More</h3>
-          <p className="footer-bottomContainer-column-text">FAQ</p>
+          <Link to="/faq" className="footer-link"><p className="footer-bottomContainer-column-text">FAQ</p></Link>
           <p className="footer-bottomContainer-column-text">Instructors</p>
           <p className="footer-bottomContainer-column-text">Contact Us</p>
         </div>
