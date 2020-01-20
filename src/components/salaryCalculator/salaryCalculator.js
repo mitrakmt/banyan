@@ -83,7 +83,7 @@ function SalaryCalculator() {
           <select onChange={changeSelectedRole} className="salaryCalculator-select">
             {
               Object.keys(roles).map((key) => {
-                return <option value={key}>{roles[key].name}</option>
+                return <option key={key} value={key}>{roles[key].name}</option>
               })
             }
           </select>
