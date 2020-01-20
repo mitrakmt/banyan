@@ -6,11 +6,20 @@
   justify-content: center;
   background-color: #67ddbf;
   z-index: 100;
-  padding: 10px;
+  max-width: 100vw;
 
   &-flex {
     display: flex;
     align-items: center;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.2s;
+    &:hover {
+      color: #298f75;
+    }
   }
 
   &-logoSignupContainer {
