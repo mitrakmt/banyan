@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import NavigationItem from "components/navigationItem/navigationItem"
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-
 import "./themeSection.scss";
 
 const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
@@ -25,7 +24,9 @@ const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
   }
 
   return (
-    <div className="themeSection">
+    <div className="themeSection" style={{
+      backgroundImage: `url(${sellingPoints[selectedNavigation].backgroundImage})`
+    }}>
       <h3 className="themeSection-title">{title}</h3>
       <h5 className="themeSection-subtitle">{sellingPoints[selectedNavigation].subtitle}</h5>
       <div className="themeSection-sellingPoints">
