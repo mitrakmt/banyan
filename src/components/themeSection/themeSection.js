@@ -47,10 +47,10 @@ const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
           }
         </div>
       <span className="themeSection-navigation themeSection-navigation-left" onClick={() => { changeNavigation(null, (selectedNavigation - 1)) }}>
-        <ArrowBackIosIcon />
+        <ArrowBackIosIcon className="themeSection-arrow" />
       </span>
       <span className="themeSection-navigation themeSection-navigation-right" onClick={() => { changeNavigation(null, (selectedNavigation + 1)) }}>
-        <ArrowForwardIosIcon />
+        <ArrowForwardIosIcon className="themeSection-arrow" />
       </span>
     </div>
   )

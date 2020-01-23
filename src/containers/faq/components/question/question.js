@@ -9,15 +9,12 @@ function Question({ question }) {
   }
   
   return (
-    <div className="question" onClick={toggleHidden}>
+    <div className="question" onClick={toggleHidden} style={hidden ? { height: 125 } : { height: 45 }}>
       <div className="question-flex">
         <h5 className="question-arrow" style={hidden ? { transform: 'rotate(90deg) scale(1,1.3)' } : {}}>></h5>
         <h5 className="question-header">{question.questionText}</h5>
       </div>
-      {
-        hidden &&
-        <p className="question-answer">{question.answerText}</p>
-      }
+      <p className="question-answer" style={hidden ? { opacity: 1 } : { opacity: 0 }}>{question.answerText}</p>
     </div>
   );
 }
