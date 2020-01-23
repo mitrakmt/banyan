@@ -6,10 +6,6 @@ import "./faq.scss";
 function Faq() {
   const questions = [
     {
-      questionText: "How much will the program cost?",
-      answerText: "The program will cost $20,000."
-    },
-    {
       questionText: "Who are the teachers?",
       answerText: "Michael Flores and Michael Mitrakos have been professional software engineers for over 4 years. They've held diverse roles for startups and enterprises, and have experience interviewing and hiring dozens of engineers."
     },
