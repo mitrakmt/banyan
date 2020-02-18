@@ -61,7 +61,7 @@ function App() {
       <div className="footer-bottomContainer">
         <div className="footer-bottomContainer-column">
           <h3 className="footer-bottomContainer-column-header">Get started</h3>
-          <p className="footer-bottomContainer-column-text">Admission Proccess</p>
+          <Link to="/admission" className="footer-link"><p className="footer-bottomContainer-column-text">Admission Process</p></Link>
         </div>
         <div className="footer-bottomContainer-column">
           <h3 className="footer-bottomContainer-column-header">More</h3>

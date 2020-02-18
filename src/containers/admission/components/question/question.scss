@@ -1,0 +1,35 @@
+.question {
+  background-color: rgba(197, 197, 197, 0.25);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(103, 221, 192, 0.85);
+  border-left: 7px solid rgba(103, 221, 192, 1);
+  transition-duration: 0.2s;
+  overflow: hidden;
+
+  &-arrow {
+    color: rgba(103, 221, 192, 1);
+    margin: 10px;
+    font-size: 20px;
+    transition-duration: 0.2s;
+    transform: scale(1,1.3);
+    font-weight: 400;
+  }
+
+  &-flex {
+    display: flex;
+  }
+
+  &-header {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  &-answer {
+    margin: 10px;
+    transition-duration: 0.1s;
+  }
+}

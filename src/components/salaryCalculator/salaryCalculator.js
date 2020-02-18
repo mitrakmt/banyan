@@ -7,7 +7,7 @@ import "./salaryCalculator.scss";
 function SalaryCalculator() {
   const [selectedRole, setSelectedRole] = useState('marketing')
   const engineerSalary = {
-    salaries: [47000, 69737, 89201, 112550, 160000],
+    salaries: [47000, 69737, 96201, 118550, 160000],
     juniorSalary: 69737,
     midSalary: 89201,
     seniorSalary: 112550
@@ -17,7 +17,7 @@ function SalaryCalculator() {
     labels: ['', 'Junior Salary', 'Mid Level Salary', 'Senior Salary', ''],
     datasets: [
       {
-        label: ['Engineer Salary'],
+        label: ['Avg. Engineer Salary'],
         fill: false,
         lineTension: 0.1,
         backgroundColor: 'red',
