@@ -19,7 +19,7 @@ function Faq() {
     },
     {
       questionText: "How are you different from other bootcamps?",
-      answerText: "We're different in 2 primary ways. The most important is that we have 2 professional software engineers offering hands-on instruction. Dig into any other bootcamp and you'll see that your instructors are usually recent graduates of the program, which helps boost the bootcamp's image of helping students find jobs. The other way we're different is that we think great engineers are well-rounded, and so we want to bring you to a beautiful, relaxing culture to keep you sharp during the long study hours."
+      answerText: "We're different in two primary ways. The most important is that we have two professional senior software engineers offering hands-on instruction. Dig into any other bootcamp and you'll see that your instructors are usually recent graduates of the program with no real engineering experience, which helps boost the bootcamp's image of helping students find jobs. The other way we're different is that we think great engineers are well-rounded, and so we want to bring you to a beautiful, relaxing culture to keep you sharp during the long study hours."
     },
     {
       questionText: "How many students will be in the class?",
@@ -27,7 +27,7 @@ function Faq() {
     },
     {
       questionText: "What time committment will be required?",
-      answerText: "The bootcamp is intended to be fully immersive for the duration of the program. There won't be many days where you don't spend at least some time learning, practicing, and coding. During the week you'll program and learn for 40 hours, with additional time on the weekend. All of that will be interspersed with breaks and trips around the island. That said, expect to be engaged fully in some way for the majority of each day for approximately two months."
+      answerText: "The bootcamp is intended to be fully immersive for the duration of the program. There won't be many days where you don't spend at least some time learning, practicing, and coding. During the week you'll program and learn for 40 hours, with additional time at nights and on the weekend. All of that will be interspersed with breaks and trips around the island. That said, expect to be engaged fully in some way for the majority of each day for approximately two to three months."
     },
     {
       questionText: "Do I already have to know how to program to attend?",

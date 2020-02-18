@@ -1,48 +1,48 @@
 {
   "marketing": {
-    "name": "Marketing Salary",
+    "name": "Avg. Marketing Salary",
     "salaries": [33000, 44562, 47113, 53380, 73000],
     "juniorSalary": 44562,
     "midSalary": 47113,
     "seniorSalary": 53380
   },
   "sales": {
-    "name": "Sales Salary",
+    "name": "Avg. Sales Salary",
     "salaries": [29000, 42000, 50000, 56528, 82000],
     "juniorSalary": 42000,
     "midSalary": 50000,
     "seniorSalary": 56528
   },
   "recruiting": {
-    "name": "Recruiting Salary",
+    "name": "Avg. Recruiting Salary",
     "salaries": [33000, 45943, 46547, 55123, 83000],
     "juniorSalary": 45943,
     "midSalary": 46547,
     "seniorSalary": 55123
   },
   "hr": {
-    "name": "Human Resources Salary",
+    "name": "Avg. Human Resources Salary",
     "salaries": [28000, 39068, 52562, 58679, 85000],
     "juniorSalary": 39068,
     "midSalary": 52562,
     "seniorSalary": 58679
   },
   "teacher": {
-    "name": "Teacher Salary",
+    "name": "Avg. Teacher Salary",
     "salaries": [30000, 41572, 46000, 53000, 60000],
     "juniorSalary": 41572,
     "midSalary": 46000,
     "seniorSalary": 53000
   },
   "retail": {
-    "name": "Retail Salary",
+    "name": "Avg. Retail Salary",
     "salaries": [20000, 34117, 41645, 46374, 62000],
     "juniorSalary": 34117,
     "midSalary": 41645,
     "seniorSalary": 46374
   },
   "finance": {
-    "name": "Finance Salary",
+    "name": "Avg. Finance Salary",
     "salaries": [43000, 60565, 62406, 76584, 101000],
     "juniorSalary": 60565,
     "midSalary": 62406,

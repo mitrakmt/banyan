@@ -12,8 +12,8 @@ import localCuisineImage from '../../images/local-cuisine.jpg'
 import nightlifeImage from '../../images/nightlife.jpg'
 import bali1Image from '../../images/bali1.jpg'
 import bali2Image from '../../images/bali2.jpg'
-import baliSwingImage from '../../images/bali-swing.jpeg'
-import baliBeachImage from '../../images/bali-beach.jpeg'
+import baliSwingImage from '../../images/bali-swing.jpg'
+import baliBeachImage from '../../images/bali-beach.jpg'
 import "./home.scss";
 
 function Home() {
@@ -27,28 +27,28 @@ function Home() {
           backgroundImage: handsOnExpertiseImage
         },
         {
-          subtitle: "Why not them",
-          text: [`Other bootcamps use instructors that have no experience. This is not ok, and it won't ever happen here.`],
+          subtitle: "Why not them?",
+          text: [`Other bootcamps use instructors that have no experience. That won’t happen here.`],
           backgroundImage: whyNotThemImage
         },
         {
           subtitle: "Graduate as a mid-level engineer",
-          text: [`You're going to go through x number of projects, with the guidance of expert instructors, where you'll be taught how good engineers think through and solve problems, and output excellent code.`],
+          text: [`You're going to go through 12 projects, with the guidance of expert instructors, where you'll be taught how good engineers think through and solve problems, and output excellent code.`],
           backgroundImage: graduateAsEngineerImage
         },
         {
           subtitle: "We know what companies are hiring for",
-          text: [`Our instructors have interviewed and hired over hundreds of engineers of all levels, and know what hiring managers are looking for.`],
+          text: [`We know what hiring managers are looking for because our instructors have interviewed and hired over hundreds of engineers of all levels, and have helped consulted over startups and Fortune 500 firms on their technical recruiting process. `],
           backgroundImage: hiringImage
         },
         {
           subtitle: "We know who you need to know",
-          text: [`We've got a strong network of hiring partners to get your foot in the door. One of our founding partners is a trusted advisor to fortune 500 firms in building their technical recruiting strategies.`],
+          text: [`We've got a network of hiring partners to get your foot in the door. One of our founding partners is a trusted advisor to fortune 500 firms in building their technical recruiting strategies.`],
           backgroundImage: weKnowImage
         },
         {
           subtitle: "Get overpaid like the rest of us",
-          text: [`Graduating form a junior to mid level increases your salary from $70k to $90k.`],
+          text: [`Graduating from a junior to mid level increases your salary from $50k to over 100k.`],
           backgroundImage: getOverpaidImage
         },
       ]
@@ -63,7 +63,7 @@ function Home() {
         },
         {
           subtitle: "Nightlife",
-          text: [`Experience great "views" while meeting people from all corners of the world`, `Bond with your classmates to create lifelong friendships`],
+          text: [`Bond with your classmates to create lifelong friendships`],
           backgroundImage: nightlifeImage
         }
       ]
@@ -88,7 +88,7 @@ function Home() {
         },
         {
           subtitle: "We take care of you",
-          text: [`We're going to travel you around the island, and take care of your living in a beautiful home. You don't have to worry about rent or finding great places to stay.`],
+          text: [`Leave the lodging and taxing travel decisions to us. You focus on studying and in your free time, exploring all of the beauty the island has to offer.`],
           backgroundImage: baliBeachImage
         }
       ]
