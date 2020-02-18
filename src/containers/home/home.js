@@ -12,6 +12,8 @@ import localCuisineImage from '../../images/local-cuisine.jpg'
 import nightlifeImage from '../../images/nightlife.jpg'
 import bali1Image from '../../images/bali1.jpg'
 import bali2Image from '../../images/bali2.jpg'
+import baliSwingImage from '../../images/bali-swing.jpeg'
+import baliBeachImage from '../../images/bali-beach.jpeg'
 import "./home.scss";
 
 function Home() {
@@ -81,11 +83,13 @@ function Home() {
         },
         {
           subtitle: "Ingraining the experience with passion and like-minded individuals",
-          text: [`Everyone in the program is screened to make sure they contribute to an environment of passion, ambition, and hard work. Our vision is to have an environment where you are surrounded by people who are ready to level up their lives.`]
+          text: [`Everyone in the program is screened to make sure they contribute to an environment of passion, ambition, and hard work. Our vision is to have an environment where you are surrounded by people who are ready to level up their lives.`],
+          backgroundImage: baliSwingImage
         },
         {
           subtitle: "We take care of you",
-          text: [`We're going to travel you around the island, and take care of your living in a beautiful home. You don't have to worry about rent or finding great places to stay.`]
+          text: [`We're going to travel you around the island, and take care of your living in a beautiful home. You don't have to worry about rent or finding great places to stay.`],
+          backgroundImage: baliBeachImage
         }
       ]
     }
