@@ -25,7 +25,12 @@ function App() {
   return (
     <div className="footer">
       <div className="footer-logoSignupContainer">
-        <img src={logo} className="footer-logo" alt="logo" />
+        <div className="footer-row">
+          <img src={logo} className="footer-logo" alt="logo" />
+          <p className="footer-contact-text">
+            Contact us at contact@codeinbali.com
+          </p>
+        </div>
         <div>
           <p className="footer-signupText">
             Join Our Mailing List to Receive the Latest News & Upcoming Events
@@ -87,8 +92,6 @@ function App() {
           <Link to="/faq" className="footer-link">
             <p className="footer-bottomContainer-column-text">FAQ</p>
           </Link>
-          <p className="footer-bottomContainer-column-text">Instructors</p>
-          <p className="footer-bottomContainer-column-text">Contact Us</p>
         </div>
       </div>
     </div>
