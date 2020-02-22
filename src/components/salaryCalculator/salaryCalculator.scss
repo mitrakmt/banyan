@@ -6,6 +6,8 @@
   flex-direction: column;
   margin-bottom: 100px;
 
+  
+
   &-header {
     font-size: 40px; 
     margin-bottom: 10px;
@@ -35,6 +37,15 @@
       justify-content: flex-end;
       padding: 50px;
       text-align: left;
+
+      @media only screen and (max-width: 1300px) {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    @media only screen and (max-width: 1300px) {
+      flex-direction: column;
     }
   }
 
@@ -57,5 +68,7 @@
     background-color: #FAFCFD;
     border: 1px solid lightgray;
     transition: .3s ease-in-out;
+
+  
   }
 }
