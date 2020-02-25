@@ -116,11 +116,10 @@ function SalaryCalculator() {
         <div className="salaryCalculator-chart">
           <Line
             data={data}
-            height={300}
-            width={400}
+            height={400}
             options={{ maintainAspectRatio: false }}
             legend={legend}
-            style={{ margin: 0 }}
+            style={{ margin: 0, width: 100 }}
             className="salaryCalculator-chart"
           />
         </div>
