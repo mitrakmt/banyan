@@ -119,7 +119,6 @@ function SalaryCalculator() {
             height={400}
             options={{ maintainAspectRatio: false }}
             legend={legend}
-            style={{ margin: 0, width: 100 }}
             className="salaryCalculator-chart"
           />
         </div>

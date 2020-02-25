@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "images/logo/logo_favicon_outline.png";
+import logo from "images/logo/favicon.ico";
 import { Link } from "react-router-dom";
 
 import MailchimpForm from "./components/mailchimpForm";
