@@ -7,18 +7,7 @@ import "./themeSection.scss";
 const ThemeSection = ({ section: { title, subtitle, sellingPoints = [] } }) => {
   const [selectedNavigation, setSelectedNavigation] = useState(0);
   const themeStyle = {
-    backgroundImage: `url(${sellingPoints[selectedNavigation].backgroundImage})`,
-    ":before": {
-      filter: `brightness(0.1) !important`,
-      zIndex: -1,
-      width: "100%",
-      height: "100%",
-      backgroundSize: "cover",
-      backgroundRepeat: "none",
-      display: "block",
-      position: "absolute",
-      content: ""
-    }
+    backgroundImage: `url(${sellingPoints[selectedNavigation].backgroundImage})`
   };
 
   const changeNavigation = (event, index) => {
