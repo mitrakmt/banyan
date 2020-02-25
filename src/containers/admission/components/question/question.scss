@@ -31,5 +31,9 @@
   &-answer {
     margin: 10px;
     transition-duration: 0.1s;
+
+    @media only screen and (max-width: 500px) {
+      text-align: left;
+    }
   }
 }

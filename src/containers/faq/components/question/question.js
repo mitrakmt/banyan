@@ -5,16 +5,30 @@ import "./question.scss";
 function Question({ question }) {
   const [hidden, setHidden] = useState(false);
   const toggleHidden = () => {
-    setHidden(!hidden)
-  }
-  
+    setHidden(!hidden);
+  };
+
   return (
-    <div className="question" onClick={toggleHidden} style={hidden ? { height: 125 } : { height: 45 }}>
-      <div className="question-flex">
-        <h5 className="question-arrow" style={hidden ? { transform: 'rotate(90deg) scale(1,1.3)' } : {}}>></h5>
-        <h5 className="question-header">{question.questionText}</h5>
+    <div
+      className="faqQuestion"
+      onClick={toggleHidden}
+      style={hidden ? { height: "auto" } : { height: 55 }}
+    >
+      <div className="faqQuestion-flex">
+        <h5
+          className="faqQuestion-arrow"
+          style={hidden ? { transform: "rotate(90deg) scale(1,1.3)" } : {}}
+        >
+          >
+        </h5>
+        <h5 className="faqQuestion-header">{question.questionText}</h5>
       </div>
-      <p className="question-answer" style={hidden ? { opacity: 1 } : { opacity: 0 }}>{question.answerText}</p>
+      <p
+        className="faqQuestion-answer"
+        style={hidden ? { display: "block" } : { display: "none" }}
+      >
+        {question.answerText}
+      </p>
     </div>
   );
 }
