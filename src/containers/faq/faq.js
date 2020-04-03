@@ -11,7 +11,7 @@ function Faq() {
     },
     {
       questionText: "How will you help me land a job?",
-      answerText: "We're going to charge you a boat load so we can make good money and live the dream."
+      answerText: "We'll use our network to shop your project and skills around, and make sure you get connect with recruiters and companies that will be the best fit."
     },
     {
       questionText: "How can you help me fund the cost of tuition?",
